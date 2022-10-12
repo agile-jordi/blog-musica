@@ -22,8 +22,8 @@ title: Apunts de música
 email: jordi@pradel.cat
 description: >- # this means to ignore newlines until "baseurl:"
   Els meus primers passos en teoria de la música
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "/blog-musica" # the subpath of your site, e.g. /blog
+url: "https://agile-jordi.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jordipradel
 # github_username:  jekyll
 
@@ -32,7 +32,7 @@ plugins:
   - jekyll-feed
   - jekyll-paginate
   - jekyll-remote-theme
-  
+
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
