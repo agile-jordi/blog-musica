@@ -1,0 +1,8 @@
+p.figcaption { 
+	font-size: .6rem;
+	text-align:center;
+}
+
+p.figcaption a{
+	color: inherit;
+}

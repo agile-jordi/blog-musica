@@ -17,7 +17,7 @@ Quan els físics estudien una ona com aquesta, en medeixen diverses coses. Una d
 
 Però les persones van començar a fer música molt abans de saber res de tot això. I, enlloc de parlar de freqüències (vibracions per segon) van buscar maneres d'escriure i parlar del to d'un so musical. A Occident, es van acabar fent servir els noms de les notes que avui en dia coneixem: Do, Re, Mi, Fa, Sol, La Si, que en el sistema anglès duen les lletres C, D, E, F, G, A, B. El La, en particular és el nom que donem a un so musical que vibra 440 vegades per segon.
 
-Però amb només 7 noms de notes com podem referir-nos a les freqüències entre 20 Hz i 20.000 Hz? Hi ha un fernòmen que explica que puguem fer-ho. A mesura que anem augmentant el to (fent més aguda) una determinada nota, hi ha un moment que notem com si fos la mateixa nota però més aguda. Físicament s'explica perquè les ones de la nota més aguda i la més greu estan "sincronitzades", de tal manera que cada ona de la nota greu en correspon a dues de l'aguda:
+Però amb només 7 noms de notes com podem referir-nos a **totes** les freqüències entre 20 Hz i 20.000 Hz? Hi ha un fernòmen que explica que puguem fer-ho. A mesura que anem augmentant el to (fent més aguda) una determinada nota, hi ha un moment que notem una semblança amb la nota de partida, com si estiguessim escoltant una versió més aguda de la mateixa nota. Físicament s'explica perquè les ones de la nota més aguda i la més greu estan "sincronitzades", de tal manera que cada ona de la nota greu en correspon a dues de l'aguda:
 
 <img src="../assets/Frequencia doble.jpg" alt="Frequencia doble" style="zoom:67%;" />
 
@@ -25,17 +25,24 @@ Per tant, si agafem una nota qualsevol i en doblem la freqüència obtenim un to
 
 La (440 Hz), Si, Do, Re, Mi, Fa, Sol, La (880 Hz), Si, Do, Re, Mi, Fa, Sol, La (1.760 Hz)...
 
-Si mirem les tecles d'un piano veurem que, efectivament, hi ha un patró que es repeteix cada 7 tecles blanques[^3]:
+Si mirem les tecles d'un piano veurem que, efectivament, hi ha un patró que es repeteix cada 7 tecles blanques:
 
 ![teclat piano](../assets/teclat piano.png)
 
+Foto: _[Photo of Piano Keys](https://www.pexels.com/photo/photo-of-piano-keys-1516903)_ de Karyme França a Pexels
+{: .figcaption}
+
 Com que comptant de La a La hi escribim 8 notes (i per despistar als novells que tenim una mentalitat matemàtica), de les notes que hi ha entre una nota i la següent del mateix nom en diuen [octava](https://ca.wikipedia.org/wiki/Octava_(m%C3%BAsica)). El La de 440 Hz diem que és de la tercera octava... senzillament perquè és el tercer La que hi ha al teclat d'un [piano (de 88 tecles)](https://ca.wikipedia.org/wiki/Piano) si comptem des de les notes més greus a les més agudes.
 
-Les notes blanques del piano corresponen, doncs, amb els set noms de nota que es van repetint a cada octava [^4]:
+Les notes blanques del piano corresponen, doncs, amb els set noms de nota que es van repetint a cada octava:
 
-<img src="../assets/Teclat piano 1 octava.png" alt="Teclat piano 1 octava" style="zoom:50%;" />
+<img src="../assets/piano-1-octava.png" alt="Teclat piano 1 octava" style="zoom:50%;" />
 
-Podríem pensar que les freqüències entre els dos La de l'exemple es reparteixen de forma equitativa[^5] entre els 6 espais entre notes... però no és així. De fet, al piano, entre una nota i la segúent del mateix nom (entre el Do i el Do de la figura de dalt, per exemple), hi ha 12 tecles, no pas només set: les set blanques i cinc tecles negres.
+Clipart: _[A piano keyboard octave](https://freesvg.org/1533631532)_ de [Domini públic](https://creativecommons.org/licenses/publicdomain/)
+{: .figcaption}
+
+
+Podríem pensar que les freqüències entre els dos La de l'exemple es reparteixen de forma equitativa[^3] entre els 6 espais entre notes... però no és així. De fet, al piano, entre una nota i la segúent del mateix nom (entre el Do i el Do de la figura de dalt, per exemple), hi ha 12 tecles, no pas només set: les set blanques i cinc tecles negres.
 
 En música es diu que entre cada dues tecles del piano hi ha un [semitò](https://ca.wikipedia.org/wiki/Semit%C3%B2) de distància. Entre dues notes del mateix nom hi ha, doncs, 12 semitons de distància. I el nom de les notes es reparteix d'una forma particular:
 
@@ -53,10 +60,7 @@ I com anomenem les 5 notes que no han rebut cap dels noms que coneixem? Vegem-ho
 
 ---
 
-
 [^1]: Podeu dibuixar una ona així amb un programa com [Apple Grapher](https://support.apple.com/guide/grapher/welcome-gcalb3dec608/mac). La fórmula a utilitzar és pot trobar en [aquest article](https://www.ams.jhu.edu/dan-mathofmusic/sound-waves/) (en anglès).
 [^2]: D'una ona que vibra 20 vegades per segon diem que té una freqüència de 20 Hertz, abreviat 20 Hz.
-[^3]: Foto per Karyme França a Pexels: [https://www.pexels.com/photo/photo-of-piano-keys-1516903/](https://www.pexels.com/photo/photo-of-piano-keys-1516903/)
-[^4]: Gràfic per OpenClipart: https://freesvg.org/1533631532
-[^5]: Equitativa de tal manera que la freqüència es multilplica cada cop per un cer nombre tal que al cap d'una octava s'ha doblat.
-
+[^3]: Equitativa de tal manera que la freqüència es multilplica cada cop per un cert nombre tal que al cap d'una octava s'ha doblat.
+*[Hz]: Hertz. Unitat de freqüència que indica el nombre de repeticions per segon d'un feonòmen.
