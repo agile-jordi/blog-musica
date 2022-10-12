@@ -1,0 +1,38 @@
+<a href="{{ post.url | prepend: site.baseurl }}" class="catalogue-item">
+  <div>
+    {% if include.sticky == 'true' %}
+    <span class="catalogue-pinned">Pinned &middot;</span>
+    {% endif %}
+    <time datetime="{{ post.date }}" class="catalogue-time">
+    <!-- {{ post.date | date: "%d / %m / %Y" }} -->
+    {{ post.date | date: "%-d" }}
+    {% assign m = post.date | date: "%-m" %}
+    {% case m %}
+      {% when '1' %}de gener
+      {% when '2' %}de febrer
+      {% when '3' %}de març
+      {% when '4' %}d'abril
+      {% when '5' %}de maig
+      {% when '6' %}de juny
+      {% when '7' %}de juliol
+      {% when '8' %}d'agost
+      {% when '9' %}de setembre
+      {% when '10' %}d'octubre
+      {% when '11' %}de novembre
+      {% when '12' %}de desembre
+    {% endcase %}
+    de {{ post.date | date: "%Y" }}
+  </time>
+    <h1 class="catalogue-title">{{ post.title }}</h1>
+    <div class="catalogue-line"></div>
+
+    <p>
+      {% if post.excerpt_separator %}
+        {{ post.excerpt | strip_html }}
+      {% else %}
+        {{ post.content | strip_html | truncatewords: 30 }}
+      {% endif %}
+    </p>
+
+  </div>
+</a>
