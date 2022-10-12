@@ -6,14 +6,6 @@ layout: default
 <img src="../assets/partitura-h.png" alt="Freqüència simple" style="width: 100%;" />
 <div class="post-info">
     <span>Escrit</span>
-<!--     {% if page.author %}
-        {{ page.author }}
-    {% else %}
-        {{ site.author.name }}
-    {% endif %}
-
-    {% if page.date %}
-      <br> -->
       <span>el&nbsp;</span><time datetime="{{ page.date }}">
     {{ page.date | date: "%-d" }}
     {% assign m = page.date | date: "%-m" %}
@@ -33,7 +25,6 @@ layout: default
     {% endcase %}
     de {{ page.date | date: "%Y" }}
     </time>
-    {% endif %}
   </div>
   <h1 class="post-title">{{ page.title }}</h1>
   <div class="post-line"></div>
