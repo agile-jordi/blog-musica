@@ -17,7 +17,7 @@ Quan els físics estudien una ona com aquesta, en medeixen diverses coses. Una d
 
 Però les persones van començar a fer música molt abans de saber res de tot això. I, enlloc de parlar de freqüències (vibracions per segon) van buscar maneres d'escriure i parlar del to d'un so musical. A Occident, es van acabar fent servir els noms de les notes que avui en dia coneixem: Do, Re, Mi, Fa, Sol, La Si, que en el sistema anglès duen les lletres C, D, E, F, G, A, B. El La, en particular és el nom que donem a un so musical que vibra 440 vegades per segon.
 
-Però amb només 7 noms de notes com podem referir-nos a les freqüències entre 20 Hz i 20.000 Hz? Hi ha un fernòmen que explica que puguem fer-ho. A mesura que anem augmentant el to (fent més aguda) una determinada nota, hi ha un determinat moment que notem com si fos la mateixa nota però més aguda. Físicament s'explica perquè les ones de la nota més aguda i la més greu estan "sincronitzades", de tal manera que cada ona de la nota greu en correspon a dues de l'aguda:
+Però amb només 7 noms de notes com podem referir-nos a les freqüències entre 20 Hz i 20.000 Hz? Hi ha un fernòmen que explica que puguem fer-ho. A mesura que anem augmentant el to (fent més aguda) una determinada nota, hi ha un moment que notem com si fos la mateixa nota però més aguda. Físicament s'explica perquè les ones de la nota més aguda i la més greu estan "sincronitzades", de tal manera que cada ona de la nota greu en correspon a dues de l'aguda:
 
 <img src="../assets/Frequencia doble.jpg" alt="Frequencia doble" style="zoom:67%;" />
 
@@ -35,7 +35,7 @@ Les notes blanques del piano corresponen, doncs, amb els set noms de nota que es
 
 <img src="../assets/Teclat piano 1 octava.png" alt="Teclat piano 1 octava" style="zoom:50%;" />
 
-Podríem pensar que les freqüències entre els dos La de l'exemple es reparteixen de forma equitativa[^5] entre els 6 espais entre notes... però no és així. De fet, al piano, entre una nota i la segúent del mateix nom (entre el Do i el Do de la figura de dalt, per exmple), hi ha 12 tecles, no pas només set: les set blanques i cinc tecles negres.
+Podríem pensar que les freqüències entre els dos La de l'exemple es reparteixen de forma equitativa[^5] entre els 6 espais entre notes... però no és així. De fet, al piano, entre una nota i la segúent del mateix nom (entre el Do i el Do de la figura de dalt, per exemple), hi ha 12 tecles, no pas només set: les set blanques i cinc tecles negres.
 
 En música es diu que entre cada dues tecles del piano hi ha un [semitò](https://ca.wikipedia.org/wiki/Semit%C3%B2) de distància. Entre dues notes del mateix nom hi ha, doncs, 12 semitons de distància. I el nom de les notes es reparteix d'una forma particular:
 
@@ -49,7 +49,7 @@ En música es diu que entre cada dues tecles del piano hi ha un [semitò](https:
 | La          | Si       | 2 semitons |
 | Si          | Do       | 1 semitò   |
 
-I com anonement les 5 notes que no han rebut cap dels noms que coneixemn? Vegem-ho la propera entrada.
+I com anomenem les 5 notes que no han rebut cap dels noms que coneixem? Vegem-ho a la propera entrada.
 
 ---
 
