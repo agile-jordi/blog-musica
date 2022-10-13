@@ -7,6 +7,11 @@ p.figcaption a{
 	color: inherit;
 }
 
-table td {
+table td, table th {
 	padding-right: 1rem;
+	vertical-align: baseline;
+}
+
+table {
+	margin-bottom: 1rem;
 }

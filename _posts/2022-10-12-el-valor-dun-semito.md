@@ -5,7 +5,7 @@ date:   2022-10-12
 categories: musica
 author: 'Jordi'
 excerpt_separator: <!--more-->
-tags: notes
+tags: [melodia]
 ---
 
 Avui faré un passeig curt per les matemàtiques de la música. Si no t'agraden les matemàtiques, te'l pots saltar, perquè res del que posaré aquí surt als llibres de música que llegeixo ni res és necessari per a entendre la música... <!--more--> a menys que vulguis entendre bé aquesta frase:

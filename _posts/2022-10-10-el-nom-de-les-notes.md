@@ -5,7 +5,7 @@ date:   2022-10-10
 categories: musica
 author: 'Jordi'
 excerpt_separator: <!--more-->
-tags: notes
+tags: [melodia, notació]
 ---
 
 Segons la [Viquipèdia](https://ca.wikipedia.org/wiki/So), "el so és una successió de canvis de pressió (compressions i dilatacions) en un medi (sòlid, líquid o gas), provocats per una vibració que s'hi transmet en forma d'ones sonores". Aquest medi, en el nostre cas, sol ser l'aire. I les ones les podem imaginar com les que causa una pedreta que cau a l'aigua quieta d'un bassal. <!--more-->
