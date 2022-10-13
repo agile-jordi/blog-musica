@@ -687,6 +687,7 @@ exports.concat = concat;
 function render(mdmScore, element, zoom = 0.8) {
     // See https://github.com/0xfe/vexflow/blob/master/tests/bach_tests.ts
     // and https://github.com/0xfe/vexflow/issues/471 for how it looks like
+    var _a, _b, _c;
     const score = parseScore(mdmScore);
     console.log('score:', score);
     const segments = score.segments;
@@ -697,13 +698,17 @@ function render(mdmScore, element, zoom = 0.8) {
     element.innerHTML = '';
     const renderer = new vexflow_1.Renderer(element, vexflow_1.Renderer.Backends.SVG);
     // Configure the rendering context.
-    const height = 150;
-    const paddingNorth = 20;
-    renderer.resize(1200, (height * segments.length + paddingNorth) * zoom);
+    const height = 150 * zoom;
+    const paddingNorth = 20 * zoom;
+    const clefPadding = ((_a = segments[0]) === null || _a === void 0 ? void 0 : _a.clef) ? 30 : 0;
+    const keyPadding = ((_b = segments[0]) === null || _b === void 0 ? void 0 : _b.key) ? 70 : 0;
+    const tsPadding = ((_c = segments[0]) === null || _c === void 0 ? void 0 : _c.timeSignature) ? 25 : 0;
+    const paddingEast = zoom * (clefPadding + keyPadding + tsPadding);
+    const totalWidth = zoom * (segments.length == 1 && segments[0].measures.length < 5 ? segments[0].measures.length == 1 ? segments[0].measures[0].elements.length * 50 : segments[0].measures.length * 100 : 800);
+    renderer.resize(totalWidth + paddingEast, (height * segments.length + paddingNorth));
     const context = renderer.getContext();
     context.setFont('Arial', 8);
     context.scale(zoom, zoom);
-    let noteIndex = 0;
     let x = 0;
     let y = -height + paddingNorth;
     function newLine() {
@@ -715,7 +720,6 @@ function render(mdmScore, element, zoom = 0.8) {
         x = x + width;
         return stave;
     }
-    const totalWidth = 800;
     let firstSegment = true;
     let firstMeasureExtraWidth = 0;
     let previousTimeSignature = null;
@@ -839,6 +843,11 @@ function render(mdmScore, element, zoom = 0.8) {
         vexflowHairpin.setContext(context).draw();
     });
     vexflow_1.Registry.disableDefaultRegistry();
+    var svg = element.getElementsByTagName('svg')[0];
+    var bbox = svg.getBBox();
+    var viewBox = [bbox.x, bbox.y, bbox.width, bbox.height].join(" ");
+    svg.setAttribute("viewBox", viewBox);
+    svg.setAttribute('height', bbox.height + 'px');
 }
 exports.render = render;
 function renderAll(selector, zoom = 0.8) {
@@ -848,8 +857,8 @@ function renderAll(selector, zoom = 0.8) {
         var _a;
         const score = element.textContent || '';
         const div = document.createElement('div');
-        render(score, div, zoom);
         (_a = element.parentElement) === null || _a === void 0 ? void 0 : _a.replaceChild(div, element);
+        render(score, div, zoom);
     });
 }
 exports.renderAll = renderAll;
