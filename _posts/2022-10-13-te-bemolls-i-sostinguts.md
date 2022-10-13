@@ -8,9 +8,9 @@ excerpt_separator: <!--more-->
 tags: [melodia, notació]
 ---
 
-A [El nom de les notes](../2022-10-10/el-nom-de-les-notes) vaig explicar que de les 12 notes que hi ha en una octava, només 7, les corresponents a les tecles blanques del piano, tenen nom: Do, Re, Mi, Fa, Sol, La i Si. Per bé que no eren ben bé aquestes, a Occident, inicialment només es feia servir un conjunt de notes semblant. Els compositors, però, aviat van trobar que en alguns moments, alguna de les notes que tenien era massa alta o massa baixa i van començar a fer alteracions de les notes, elevant-ne o baixant-ne l'[altura](https://ca.wikipedia.org/wiki/Altura_(so)) <!--more--> [^1].
+A [El nom de les notes](../2022-10-10/el-nom-de-les-notes) vaig explicar que de les 12 notes que hi ha en una octava, només 7, les corresponents a les tecles blanques del piano, tenen nom: Do, Re, Mi, Fa, Sol, La i Si. Per bé que no eren ben bé aquestes, a Occident, inicialment només es feia servir un conjunt de notes semblant. Els compositors, però, aviat van trobar que, per a determinats passatges o punts concrets de les seves obres, alguna de les notes que tenien era massa alta o massa baixa. Així van començar a fer alteracions de les notes, que les elevaven o abaixaven en [altura](https://ca.wikipedia.org/wiki/Altura_(so)) <!--more--> [^1].
 
-Avui en dia les alteracions permeten apujar o abaixar el to d'una nota en un semitò. Aquestes alteracions s'anoten amb uns símbols que anomenem [accidents](https://ca.wikipedia.org/wiki/Alteraci%C3%B3_(m%C3%BAsica)):
+Avui en dia les alteracions permeten apujar o abaixar el to d'una nota en un semitò[^2]. Aquestes alteracions s'anoten amb uns símbols que anomenem [accidents](https://ca.wikipedia.org/wiki/Alteraci%C3%B3_(m%C3%BAsica)):
 
 | Alteració         | Accident | Explicació                              |
 | :-----------------: | :--------: | :--------------------------------------- |
@@ -21,11 +21,14 @@ A partir d'aquí, i tenint present el teclat d'un piano, podem posar noms a les 
 
 ![piano-2-octaves](../assets/piano-2-octaves.png)
 
+Clipart: Treball derivat de "[A piano keyboard octave](https://freesvg.org/1533631532)" de [Domini públic](https://creativecommons.org/licenses/publicdomain/)
+{: .figcaption}
+
 Així, si pugem l'altura del Re en un semitò tenim un Re♯ i si l'abaixemun semitò tenim un Re♭. I ja tenim dues tecles negres del piano que fins ara no tenien nom i que ja podem designar.
 
 Però què passa si apugem l'altura d'un Do en un semitò? Tenim un Do♯... Però de la tecla entre el Do i el Re no en dèiem Re♭?
 
-Un mateix so musical com ara el que fa la tecla negra que hi ha entre el Do i el Re en un piano, pot escriure's de diverses maneres igual que un mateix so fonètic es pot escriure amb diverses grafies, igual que la B i la V són símbols diferents però representen el mateix fonema (a molts dialectes del català). Quan dues notes tenen la mateixa altura però s'escriuen de forma diferent, com el Do♯ i el Re♭, diem que una és **enharmònica** de l'altra.
+Un mateix so musical com ara el que fa la tecla negra que hi ha entre el Do i el Re en un piano, pot escriure's de diverses maneres igual que un mateix so fonètic es pot escriure amb diverses grafies; com ara la B i la V, que són símbols diferents però representen el mateix fonema (a molts dialectes del català). Quan dues notes tenen la mateixa altura però s'escriuen de forma diferent, com el Do♯ i el Re♭, diem que una és **enharmònica** de l'altra.
 
 Però aleshores, per què tenim notes que s'escriuen diferent però són enharmòniques les unes de les altres? Aquest és un tema força més avançat que no veurem encara. La intuïció, però, és que la mateixa altura s'escriu com una o com l'altra segons el context i quina funció fa a la partitura.
 
@@ -49,4 +52,7 @@ Per últim, hi ha un accident que es fa servir per indicar que una nota **no** �
 | :---------: | :--------: | :------------------------------------------------------------ |
 | Becaire   | <span style="font-size:200%">♮</span> | Indica que l'altura de la nota no està alterada encara que pel context, si no s'indica explícitament, ho estaria. |
 
+---
+
 [^1]: En articles anteriors per parlar de com de greu o aguda és una nota, parlava del seu to. Tot i que crec que és correcte, ara he trobat que a la Viquipèdia, quan es parla d'alteracions, es fa servir el terme altura. Més enllà de ser, sembla ser, més utilitzat, té l'avantatge que no es confón amb el concepte de to com la distància equivalent a dos semitons.
+[^2]: Introdueixo els semitons a [El nom de les notes](../2022-10-10/el-nom-de-les-notes) i en medeixo la magnitud física a [El valor d'un semitò](../2022-10-12/el-valor-dun-semito).
