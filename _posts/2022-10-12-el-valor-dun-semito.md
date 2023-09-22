@@ -5,7 +5,7 @@ date:   2022-10-12
 categories: musica
 author: 'Jordi'
 excerpt_separator: <!--more-->
-tags: [melodia]
+tags: [ciència]
 ---
 
 Avui faré un passeig curt per les matemàtiques de la música. Si no t'agraden les matemàtiques, te'l pots saltar, perquè res del que posaré aquí surt als llibres de música que llegeixo ni res és necessari per a entendre la música... <!--more--> a menys que vulguis entendre bé aquesta frase:
@@ -16,11 +16,11 @@ Tal com [vaig explicar](../2022-10-10/el-nom-de-les-notes) si una nota té una c
 
 | Nota                    | Freqüència |
 | ----------------------- | ---------- |
-| La4                     | 440 Hz     |
+| La4[^1]                 | 440 Hz     |
 | La4 + 1 semitò          | ?          |
 | ...                     | ?          |
 | La4 + 11 semitons       | ?          |
-| L 4 + 12 semitons (La5) | 440 Hz * 2 |
+| La4 + 12 semitons (La5) | 440 Hz * 2 |
 
 Com que de La a La el que fem no és sumar una certa freqüència sinó multiplicar per 2, és fàcil arribar a la conclusió que a cada semitò el que fem és multiplicar la freqüència anterior per una certa constant _C_. Aquest valor, el valor pel que multiplica un semitò la freqüència d'un so, és el que busco.
 
@@ -32,7 +32,7 @@ Pensant en aquest factor multiplicatiu, podem reescriure la taula anterior com:
 | La4 + 1 semitò | 440 Hz * C = 440 Hz * C<sup>1</sup> |
 | La4 + 2 semitons | (440 Hz * C) * C = 440 Hz * C<sup>2</sup> |
 | ...                     | ...          |
-| L 4 + 12 semitons (La5) | 440 Hz * C<sup>12</sup> = 440 Hz * 2 |
+| La4 + 12 semitons (La5) | 440 Hz * C<sup>12</sup> = 440 Hz * 2 |
 
 Per tant, podem concloure que 2 = C<sup>12</sup> i, per tant, que C = 2<sup>1/12</sup> que és l'arrel dotzena de 2; literalment, el número que cal multiplicar per ell mateix 12 vegades per obtenir un 2. I si el calculem, és aproximadament 1,059463.
 
@@ -44,3 +44,8 @@ La solució la vaig trobar en [aquest article](https://www.ams.jhu.edu/dan-matho
 
 
 
+[^1]: La4 segons el sistema internacional, La3 segons el sistema franco-belga en ús a Espanya
+
+*[La4]: La3 en el sistema franco-belga
+
+*[La5]: La3 en el sistema franco-belga

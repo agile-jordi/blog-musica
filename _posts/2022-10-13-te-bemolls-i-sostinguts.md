@@ -26,13 +26,15 @@ Clipart: Treball derivat de "[A piano keyboard octave](https://freesvg.org/15336
 
 Així, si pugem l'altura del Re en un semitò tenim un Re♯ i si l'abaixemun semitò tenim un Re♭. I ja tenim dues tecles negres del piano que fins ara no tenien nom i que ja podem designar.
 
+A les notes corresponent a les tecles blanques del piano, que no tenen alteracions, en diem notes naturals. Les altres, com que tenen alteracions, es diuen notes alterades.
+
 Però què passa si apugem l'altura d'un Do en un semitò? Tenim un Do♯... Però de la tecla entre el Do i el Re no en dèiem Re♭?
 
 Un mateix so musical com ara el que fa la tecla negra que hi ha entre el Do i el Re en un piano, pot escriure's de diverses maneres igual que un mateix so fonètic es pot escriure amb diverses grafies; com ara la B i la V, que són símbols diferents però representen el mateix fonema (a molts dialectes del català). Quan dues notes tenen la mateixa altura però s'escriuen de forma diferent, com el Do♯ i el Re♭, diem que una és **enharmònica** de l'altra.
 
-Però aleshores, per què tenim notes que s'escriuen diferent però són enharmòniques les unes de les altres? Aquest és un tema força més avançat que no veurem encara. La intuïció, però, és que la mateixa altura s'escriu com una o com l'altra segons el context i quina funció fa a la partitura.
+Però per què necessitem poder escriure diferent dues notes que sonen igual? Aquest és un tema força més avançat que no veurem encara. La intuïció, però, és que la mateixa altura s'escriu com una nota o com l'altra segons el context i quina funció fa a la partitura.
 
-Cal tenir en compte que fins i tot les notes "amb nom", les que corresponen a les tecles blanques del piano, poden ser enharmòniques d'altres notes. Aquesta és la llista completa de notes que hi ha en una octava on, per a cada una, donem els diferents enharmònics que podem formar amb  ♭ i ♯:
+Cal tenir en compte que fins i tot les notes naturals (les que corresponen a les tecles blanques del piano) poden ser enharmòniques d'altres notes. Aquesta és la llista completa de notes que hi ha en una octava on, per a cada una, donem els diferents enharmònics que podem formar amb  ♭ i ♯:
 
 |      ⬜️      |      ⬛️       |    ⬜️     |      ⬛️       |      ⬜️      |      ⬜️      |       ⬛️       |     ⬜️     |       ⬛️       |    ⬜️     |      ⬛️       |    ⬜️     |
 | :---------: | :----------: | :------: | :----------: | :---------: | :---------: | :-----------: | :-------: | :-----------: | :------: | :----------: | :------: |
@@ -46,7 +48,7 @@ Per a fer-ho una mica més interessant, hi ha un parell d'accidents més corresp
 | Doble bemoll    | <span style="font-size:200%">𝄫</span> | Abaixa l'altura d'una nota en dos semitons (un to) |
 
 
-Per últim, hi ha un accident que es fa servir per indicar que una nota **no** és ni sostingut ni bemoll. Es fa servir quan, pel context, caldria esperar que la nota tingués alguna de les dues alteracions però no la té:
+Per últim, hi ha un accident que es fa servir per indicar que una nota és natural (que no és alterada). Es fa servir quan, pel context, caldria esperar que la nota tingués una alteració però no la té:
 
 | Alteració | Accident | Explicació                                                   |
 | :---------: | :--------: | :------------------------------------------------------------ |

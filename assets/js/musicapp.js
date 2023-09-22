@@ -857,6 +857,7 @@ function renderAll(selector, zoom = 0.8) {
         var _a;
         const score = element.textContent || '';
         const div = document.createElement('div');
+        div.setAttribute("class", "music");
         (_a = element.parentElement) === null || _a === void 0 ? void 0 : _a.replaceChild(div, element);
         render(score, div, zoom);
     });

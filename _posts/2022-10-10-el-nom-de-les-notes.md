@@ -5,7 +5,7 @@ date:   2022-10-10
 categories: musica
 author: 'Jordi'
 excerpt_separator: <!--more-->
-tags: [melodia, notació]
+tags: [melodia, ciència]
 ---
 
 Segons la [Viquipèdia](https://ca.wikipedia.org/wiki/So), "el so és una successió de canvis de pressió (compressions i dilatacions) en un medi (sòlid, líquid o gas), provocats per una vibració que s'hi transmet en forma d'ones sonores". Aquest medi, en el nostre cas, sol ser l'aire. I les ones les podem imaginar com les que causa una pedreta que cau a l'aigua quieta d'un bassal. <!--more-->
@@ -32,7 +32,7 @@ Si mirem les tecles d'un piano veurem que, efectivament, hi ha un patró que es 
 Foto: _[Photo of Piano Keys](https://www.pexels.com/photo/photo-of-piano-keys-1516903)_ de Karyme França a Pexels
 {: .figcaption}
 
-Com que comptant de La a La hi escribim 8 notes (i per despistar als novells que tenim una mentalitat matemàtica), de les notes que hi ha entre una nota i la següent del mateix nom en diuen [octava](https://ca.wikipedia.org/wiki/Octava_(m%C3%BAsica)). El La de 440 Hz diem que és de la tercera octava... senzillament perquè és el tercer La que hi ha al teclat d'un [piano (de 88 tecles)](https://ca.wikipedia.org/wiki/Piano) si comptem des de les notes més greus a les més agudes.
+Com que comptant de La a La hi escribim 8 notes (i per despistar als novells que tenim una mentalitat matemàtica), de les notes que hi ha entre una nota i la següent del mateix nom en diuen [octava](https://ca.wikipedia.org/wiki/Octava_(m%C3%BAsica)). El La de 440 Hz diem que és de la quarta octava i, al sistema internacional, l'indiquem com La4 [^3].
 
 Les notes blanques del piano corresponen, doncs, amb els set noms de nota que es van repetint a cada octava:
 
@@ -42,7 +42,7 @@ Clipart: _[A piano keyboard octave](https://freesvg.org/1533631532)_ de [Domini 
 {: .figcaption}
 
 
-Podríem pensar que les freqüències entre els dos La de l'exemple es reparteixen de forma equitativa[^3] entre els 6 espais entre notes... però no és així. De fet, al piano, entre una nota i la segúent del mateix nom (entre el Do i el Do de la figura de dalt, per exemple), hi ha 12 tecles, no pas només set: les set blanques i cinc tecles negres.
+Podríem pensar que les freqüències entre els dos La de l'exemple es reparteixen de forma equitativa[^4] entre els 6 espais entre notes... però no és així. De fet, al piano, entre una nota i la segúent del mateix nom (entre el Do i el Do de la figura de dalt, per exemple), hi ha 12 tecles, no pas només set: les set blanques i cinc tecles negres.
 
 En música es diu que entre cada dues tecles del piano hi ha un [semitò](https://ca.wikipedia.org/wiki/Semit%C3%B2) de distància. Entre dues notes del mateix nom hi ha, doncs, 12 semitons de distància. I el nom de les notes es reparteix d'una forma particular:
 
@@ -62,5 +62,10 @@ I com anomenem les 5 notes que no han rebut cap dels noms que coneixem? Vegem-ho
 
 [^1]: Podeu dibuixar una ona així amb un programa com [Apple Grapher](https://support.apple.com/guide/grapher/welcome-gcalb3dec608/mac). La fórmula a utilitzar és pot trobar en [aquest article](https://www.ams.jhu.edu/dan-mathofmusic/sound-waves/) (en anglès).
 [^2]: D'una ona que vibra 20 vegades per segon diem que té una freqüència de 20 Hertz, abreviat 20 Hz.
-[^3]: Equitativa de tal manera que la freqüència es multilplica cada cop per un cert nombre tal que al cap d'una octava s'ha doblat.
+[^3]: El número d'octava, que anotem al costat del nom de la nota, s'anomena [índex acústic](https://es.wikipedia.org/wiki/%C3%8Dndice_ac%C3%BAstico). El que jo indico aquí és el sistema internacional, en que coincideix que la primera octava completa d'un piano (estàndard, de 88 tecles) té el número 1, la segona el 2, etc. Malauradament, a Espanya, França i Bèlgica es fa servir un sistema anomenat Franco-Belga, que fa servir un número menys que el sistema internacional.
+
+[^4]: Equitativa de tal manera que la freqüència es multilplica cada cop per un cert nombre tal que al cap d'una octava s'ha doblat.
+
 *[Hz]: Hertz. Unitat de freqüència que indica el nombre de repeticions per segon d'un feonòmen.
+
+*[La4]: La3 en el sistema franco-belga
