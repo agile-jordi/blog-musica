@@ -1,10 +1,23 @@
 ---
 layout: post
 ---
-
+<script src="{{ site.baseurl }}/assets/abcjs-basic-min.js" type="text/javascript"></script>
 <script src="{{ site.baseurl }}/assets/js/musicapp.js"></script>
 {{content}}
 <script type="text/javascript">
   const {renderAll} = require('musicapp');	
+  // const {abcjs} = require('abcjs-basic-min');
   renderAll('code.language-music', 0.8);	
+
+  var visualOptions = {  };
+  Array
+  .from(document.querySelectorAll('code.language-music-abc'))
+  .forEach(element => {
+    const score = element.textContent || '';
+    const div = document.createElement('div');
+    div.setAttribute("class", "music");
+    element.parentElement?.replaceChild(div, element);
+    console.log("ABCJS: ", ABCJS);
+    var visualObj = ABCJS.renderAbc(div, score, visualOptions);
+  });
 </script>

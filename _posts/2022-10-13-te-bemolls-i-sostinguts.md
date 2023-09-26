@@ -1,14 +1,18 @@
 ---
 layout: music
-title:  "Té bemolls... i sostinguts"
-date:   2022-10-13
+title: Té bemolls... i sostinguts
+date: 2022-10-13
 categories: musica
-author: 'Jordi'
+author: Jordi
 excerpt_separator: <!--more-->
-tags: [melodia, notació]
+tags:
+  - melodia
+  - notació
+aliases:
+  - Té bemolls... i sostinguts
 ---
 
-A [El nom de les notes](../2022-10-10/el-nom-de-les-notes) vaig explicar que de les 12 notes que hi ha en una octava, només 7, les corresponents a les tecles blanques del piano, tenen nom: Do, Re, Mi, Fa, Sol, La i Si. Per bé que no eren ben bé aquestes, a Occident, inicialment només es feia servir un conjunt de notes semblant. Els compositors, però, aviat van trobar que, per a determinats passatges o punts concrets de les seves obres, alguna de les notes que tenien era massa alta o massa baixa. Així van començar a fer alteracions de les notes, que les elevaven o abaixaven en [altura](https://ca.wikipedia.org/wiki/Altura_(so)) <!--more--> [^1].
+A [El nom de les notes](2022-10-10-el-nom-de-les-notes) vaig explicar que de les 12 notes que hi ha en una octava, només 7, les corresponents a les tecles blanques del piano, tenen nom: Do, Re, Mi, Fa, Sol, La i Si. Per bé que no eren ben bé aquestes, a Occident, inicialment només es feia servir un conjunt de notes semblant. Els compositors, però, aviat van trobar que, per a determinats passatges o punts concrets de les seves obres, alguna de les notes que tenien era massa alta o massa baixa. Així van començar a fer alteracions de les notes, que les elevaven o abaixaven en [altura](https://ca.wikipedia.org/wiki/Altura_(so)) <!--more--> [^1].
 
 Avui en dia les alteracions permeten apujar o abaixar el to d'una nota en un semitò[^2]. Aquestes alteracions s'anoten amb uns símbols que anomenem [accidents](https://ca.wikipedia.org/wiki/Alteraci%C3%B3_(m%C3%BAsica)):
 
@@ -19,8 +23,7 @@ Avui en dia les alteracions permeten apujar o abaixar el to d'una nota en un sem
 
 A partir d'aquí, i tenint present el teclat d'un piano, podem posar noms a les tecles negres.
 
-![piano-2-octaves](../assets/piano-2-octaves.png)
-
+![piano-2-octaves](../img/piano-2-octaves.png)
 Clipart: Treball derivat de "[A piano keyboard octave](https://freesvg.org/1533631532)" de [Domini públic](https://creativecommons.org/licenses/publicdomain/)
 {: .figcaption}
 
@@ -57,4 +60,4 @@ Per últim, hi ha un accident que es fa servir per indicar que una nota és natu
 ---
 
 [^1]: En articles anteriors per parlar de com de greu o aguda és una nota, parlava del seu to. Tot i que crec que és correcte, ara he trobat que a la Viquipèdia, quan es parla d'alteracions, es fa servir el terme altura. Més enllà de ser, sembla ser, més utilitzat, té l'avantatge que no es confón amb el concepte de to com la distància equivalent a dos semitons.
-[^2]: Introdueixo els semitons a [El nom de les notes](../2022-10-10/el-nom-de-les-notes) i en medeixo la magnitud física a [El valor d'un semitò](../2022-10-12/el-valor-dun-semito).
+[^2]: Introdueixo els semitons a [El nom de les notes](2022-10-10-el-nom-de-les-notes) i en medeixo la magnitud física a [El valor d'un semitò](2022-10-12-el-valor-dun-semito).

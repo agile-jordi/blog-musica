@@ -1,14 +1,18 @@
 ---
 layout: music
-title:  "El pentagrama i l'altura de les notes"
-date:   2022-10-14
+title: El pentagrama i l'altura de les notes
+date: 2022-10-14
 categories: musica
-author: 'Jordi'
+author: Jordi
 excerpt_separator: <!--more-->
-tags: [melodia, notació]
+tags:
+  - melodia
+  - notació
+aliases:
+  - El pentagrama i l'altura de les notes
 ---
 
-En anteriors articles de melodia he parlat del [nom de les notes](../2022-10-10/el-nom-de-les-notes), de les [alteracions](../2022-10-13/te-bemolls-i-sostinguts) i fins i tot he calculat la [mesura física d'un semitò](2022-10-12/el-valor-dun-semito). Vegem ara com s'escriuen aquestes notes en una partitura. <!--more-->
+En anteriors articles de melodia he parlat del [nom de les notes](2022-10-10-el-nom-de-les-notes), de les [alteracions](2022-10-13-te-bemolls-i-sostinguts) i fins i tot he calculat la [mesura física d'un semitò](2022-10-12-el-valor-dun-semito). Vegem ara com s'escriuen aquestes notes en una partitura. <!--more-->
 
 🚨 Alerta! En aquest article, quan mencioni l'[índex acústic](https://es.wikipedia.org/wiki/%C3%8Dndice_ac%C3%BAstico) d'una nota, el numeret que indica l'octava a la qual pertany la nota, ho faré en el sistema internacional, no en el sistema franco-belga en ús a Espanya.
 

@@ -1,18 +1,21 @@
 ---
 layout: music
-title:  "El valor d'un semitò"
-date:   2022-10-12
+title: El valor d'un semitò
+date: 2022-10-12
 categories: musica
-author: 'Jordi'
+author: Jordi
 excerpt_separator: <!--more-->
-tags: [ciència]
+tags:
+  - ciència
+aliases:
+  - El valor d'un semitò
 ---
 
 Avui faré un passeig curt per les matemàtiques de la música. Si no t'agraden les matemàtiques, te'l pots saltar, perquè res del que posaré aquí surt als llibres de música que llegeixo ni res és necessari per a entendre la música... <!--more--> a menys que vulguis entendre bé aquesta frase:
 
 > Podríem pensar que les freqüències entre els dos La de l’exemple es reparteixen de forma equitativa entre els 6 espais entre notes… però no és així. De fet, al piano,  entre una nota i la segúent del mateix nom (entre el Do i el Do de la  figura de dalt, per exemple), hi ha 12 tecles, no pas només set: les set blanques i cinc tecles negres.
 
-Tal com [vaig explicar](../2022-10-10/el-nom-de-les-notes) si una nota té una certa freqüència x, com el La, que té 440 Hz de freqüència, la nota que té el doble de freqüència es diu igual i està separada per 12 semitons de distància de la primera. Això em porta a preguntar-me, puc calcular les freqüències de les notes intermitges?
+Tal com [vaig explicar](2022-10-10-el-nom-de-les-notes) si una nota té una certa freqüència x, com el La, que té 440 Hz de freqüència, la nota que té el doble de freqüència es diu igual i està separada per 12 semitons de distància de la primera. Això em porta a preguntar-me, puc calcular les freqüències de les notes intermitges?
 
 | Nota                    | Freqüència |
 | ----------------------- | ---------- |

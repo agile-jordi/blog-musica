@@ -38,4 +38,4 @@ gem "jekyll-remote-theme"
 gem "jekyll-paginate"
 gem "tale"
 gem "webrick", "~> 1.7"
-
+gem 'html-proofer'

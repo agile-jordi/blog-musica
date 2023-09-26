@@ -1,17 +1,22 @@
 ---
 layout: music
-title:  "Violins i pentagrames"
+title: Violins i pentagrames
 categories: musica
-author: 'Jordi'
+author: Jordi
 excerpt_separator: <!--more-->
-tags: [melodia, notació, violí]
+tags:
+  - melodia
+  - notació
+  - violí
+aliases:
+  - Violins i pentagrames
 ---
 
-A [l'últim article](../2022-10-14/notacio-altura) vaig explicar com s'anota l'altura de les notes en un pentagrama i vaig comentar que en el cas del violí fem servir la clau de Sol (en segona). Avui en faig un de curtet per parlar precisament del meu instrument, el violí[^1]. Per als principiants ens resulta molt útil situar ràpidament al pentagrama les notes que sabem tocar i això és el que em proposo resumir, on van a parar al pentagrama les notes que toquem en un violí en primera posició.
+A [l'últim article](2022-10-14-notacio-altura) vaig explicar com s'anota l'altura de les notes en un pentagrama i vaig comentar que en el cas del violí fem servir la clau de Sol (en segona). Avui en faig un de curtet per parlar precisament del meu instrument, el violí[^1]. Per als principiants ens resulta molt útil situar ràpidament al pentagrama les notes que sabem tocar i això és el que em proposo resumir, on van a parar al pentagrama les notes que toquem en un violí en primera posició.
 
 <!--more-->
 
- Com vaig comentar, l'`ambit del violí és Sol3 - La7, però l'àmbit en primera posició és Sol3 - Si5. És a dir, si deixem la mà del violí fixa a la posició de les notes més greus, podrem tocar totes les notes entre el Sol3 i el Si5, però no podrem tocar notes més agudes que el Si 5(ni més greus que el Sol3).
+Com vaig comentar, l'àmbit del violí és Sol3 - La7, però l'àmbit en primera posició és Sol3 - Si5. És a dir, si deixem la mà del violí fixa a la posició de les notes més greus, podrem tocar totes les notes entre el Sol3 i el Si5, però no podrem tocar notes més agudes que el Si 5(ni més greus que el Sol3).
 
 El violí té 4 cordes que, tocades a l'aire, sonen, de més greu a més aguda, Sol3, Re4, La4 i Mi5. En una partitura, aquestes quatre notes són:
 
@@ -59,11 +64,7 @@ Les notes del violí a la corda Mi en primera posició
 
 Així doncs, si vull aprendre a llegir les notes que em trobaré als primers llibres de Suzuki, em cal aprendre les que podeu trobar en aquest article. Si feu servir, com vaig recomanar, Music Tutor, configureu l'aplicació per a que us pregunti notes en aquest interval o en un subconjunt d'aquest (podeu practicar, per exemple, per corda):
 
-<img src="../assets/music-tutor-opcions.jpeg" alt="music-tutor-opcions" style="width:80%;max-width:400px;" />
-
-
-
-
+![](../img/music-tutor-opcions.jpeg)
 
 [^1]: Anava a posar el meu i el dels meus fills, però ells en toquen d'altres, d'instruments, dels que jo, ni idea.
 
