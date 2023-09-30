@@ -130,7 +130,7 @@ layout: post
             });
         }
 
-        var visualOptions = { clickListener: clickListener, add_classes: true };
+        var visualOptions = { clickListener: clickListener, add_classes: true, responsive: "resize" };
         var score = ABCJS.renderAbc(elem, abcString, visualOptions)[0];
         console.log("Created Score:\n  audio: ", audio, "\n  abc: ", abcString, "\n  elem: ", elem, "\n  audioElemn: ", audioElem);
 
