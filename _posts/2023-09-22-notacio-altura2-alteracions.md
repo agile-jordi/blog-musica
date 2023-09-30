@@ -16,20 +16,20 @@ A [El pentagrama i l'altura de les notes](2022-10-14-notacio-altura) vam veure c
 <!--more-->
 
 Les notes alterades s'indiquen, com vaig avançar a [Té bemolls... i sostinguts](2022-10-13-te-bemolls-i-sostinguts), mitjançant accidents com <span style="font-size:150%">♯</span> i <span style="font-size:150%">♭</span>. Aquests accidents es poden indicar just abans de la nota que alteren:
-
-```music
-CTr #C5 bE4
+```music-abc
+L:1/4
+^c _E
 ```
 Un Do sostingut i un Mi bemoll
 {:.figcaption}
 
 Armats amb aquesta eina, ja podríem escriure una partitura sencera, com aquesta de la cançó popular _La Primavera_:
-
-```music
-  CTr TC A.bd #C5/8 E/4 A #F A/8 #F E/2 D/4. E/8 #C/4 A4 B/2 A
-               E5 E D D #C E/8 #C B4/2 E5/4 E D D #C E/8 #C B4/2
-               A. #C5/8 E/4 A #F A/8 #F E/2 D/4. E/8 #C/4 A4 B/2 A |||
-
+```music-abc
+M:C
+L:1/4
+A3/ ^c/ e a | ^f a/^f/ e2 | d3/ e/ ^c A | B2 A2
+e e d d | ^c e/^c/ B2 | e e d d | ^c e/^c/ B2
+A3/ ^c/ e a | ^f a/^f/ e2 | d3/ e/ ^c A | B2 A2 |]
 ```
 _La Primavera_, popluar (sense armadura)
 {:.figcaption}
@@ -43,14 +43,16 @@ Moltes partitures (de la música occidental) tindran tots els Do i tots els Fa (
 Tot i que ho explicarem més endavant, la intuïció, per ara, és que cada partitura fa servir una determinada "paleta" de notes, com un pintor fa servir una paleta de colors. En una peça, enlloc de fer servir totes les notes possibles, determinades notes apareixen més freqüentment que d'altres, igual que en un quadre determinats colors predominen. Així, el compositor *sol* fer servir principalment 7 notes diferents (de les 12 que vam veure) però no sempre les 7 naturals, si no que de vegades n'escull d'alterades. D'aquestes "paletes" en diem **tonalitats**. En tota la música occidental cada paritura (de vegades cada una de les parts de la partitura), fa servir una mateixa tonalitat durant força compassos. I, per últim, encara que es podria pensar que pot haver-hi moltíssimes tonalitats diferents, escollint subconjunts diferents de les 12 notes, en música occidental només es fan servir 15 combinacions diferents de notes (que donen lloc a 15 tonalitats anomenades Majors i 15 tonalitats anomenades menors).
 
 Tornant al nostre exemple de _La primavera_, enlloc d'indicar que el Do i el Fa són sostinguts cada vegada que apareixen, es fa servir el que s'anomena una **armadura**, on s'indica el conjunt de notes que estaran alterades en aquella tonalitat:
-
-```music
-  CTr TC KA A.bd C5/8 E/4 A F A/8 F E/2 D/4. E/8 C/4 A4 B/2 A
-               E5 E D D C E/8 C B4/2 E5/4 E D D C E/8 C B4/2
-               A. C5/8 E/4 A F A/8 F E/2 D/4. E/8 C/4 A4 B/2 A |||
+```music-abc
+M:C
+T: La primavera
+C: Popular
+L:1/4
+K:A
+A3/ c/ e a | f a/f/ e2 | d3/ e/ c A | B2 A2
+e e d d | c e/c/ B2 | e e d d | c e/c/ B2
+A3/ c/ e a | f a/f/ e2 | d3/ e/ c A | B2 A2 |]
 ```
-_La Primavera_, popluar
-{:.figcaption}
 
 En aquest cas, l'armadura ens indica que, durant tota la partitura, si no s'indica el contrari, tots els Fa, Do i Sol seran sostinguts. D'aquesta manera no cal posar accidents a totes aquestes notes i només a les que suposin excepcions, quan el compositor decideix fer servir una nota que no està a la "paleta" de la tonalitat escollida, cosa que passa menys freqüentment.
 

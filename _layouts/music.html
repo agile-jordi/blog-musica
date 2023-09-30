@@ -4,20 +4,162 @@ layout: post
 <script src="{{ site.baseurl }}/assets/abcjs-basic-min.js" type="text/javascript"></script>
 <script src="{{ site.baseurl }}/assets/js/musicapp.js"></script>
 {{content}}
-<script type="text/javascript">
-  const {renderAll} = require('musicapp');	
-  // const {abcjs} = require('abcjs-basic-min');
-  renderAll('code.language-music', 0.8);	
+<style>
+    .abcjs-highlight.abcjs-highlight {
+        fill: #0a9ecc;
+    }
 
-  var visualOptions = {  };
-  Array
-  .from(document.querySelectorAll('code.language-music-abc'))
-  .forEach(element => {
-    const score = element.textContent || '';
-    const div = document.createElement('div');
-    div.setAttribute("class", "music");
-    element.parentElement?.replaceChild(div, element);
-    console.log("ABCJS: ", ABCJS);
-    var visualObj = ABCJS.renderAbc(div, score, visualOptions);
-  });
+    .abcjs-note_selected {
+        fill: inherit;
+    }
+</style>
+<script type="text/javascript">
+
+    function CursorControl(elem) {
+        var self = this;
+
+        self.elem = elem;
+
+        self.onStart = function () { };
+
+        self.removeSelection = function () {
+            // Unselect any previously selected notes.
+            var lastSelection = elem.querySelectorAll(".abcjs-highlight");
+            for (var k = 0; k < lastSelection.length; k++)
+                lastSelection[k].classList.remove("abcjs-highlight");
+        };
+
+
+        self.onEvent = function (ev) {
+
+            // This is called every time a note or a rest is reached and contains the coordinates of it.
+            if (ev.measureStart && ev.left === null)
+                return; // this was the second part of a tie across a measure line. Just ignore it.
+
+            self.removeSelection();
+
+            // Select the currently selected notes.
+            for (var i = 0; i < ev.elements.length; i++) {
+                var note = ev.elements[i];
+                for (var j = 0; j < note.length; j++) {
+                    note[j].classList.add("abcjs-highlight");
+                }
+            }
+
+        };
+        self.onFinished = function () {
+            self.removeSelection();
+        };
+    }
+
+    function Audio(audioElem) {
+        console.log("New Audio created");
+        const controlOptions = {
+            displayPlay: true,
+            displayProgress: true,
+            displayClock: true
+        };
+        const self = this;
+        var activated = false;
+        var audioOptions = { program: 40 };
+        var currentTune = null;
+        var synthControl = null;
+        var midiBuffer = null;
+        self.activate = function (tune, cursorControl, then) {
+            if (currentTune === tune) {
+                console.log("Tune already set");
+                then();
+            } else {
+                synthControl?.pause();
+                if (ABCJS.synth.supportsAudio()) {
+                    synthControl = new ABCJS.synth.SynthController();
+                    synthControl.load(audioElem, cursorControl, controlOptions);
+                    synthControl.disable(false);
+                    midiBuffer = new ABCJS.synth.CreateSynth();
+                    midiBuffer.init({
+                        visualObj: tune,
+                        options: {
+                            pan: [-.5, .5]
+                        }
+                    }).then(function () {
+                        console.log("midi buffer initialized");
+                        synthControl.setTune(tune, true, audioOptions).then(function (response) {
+                            console.log("Tune set");
+                            then();
+                        });
+                    });
+                    currentTune = tune;
+                } else {
+                    console.log("audio is not supported on this browser");
+                    then();
+                }
+            }
+        };
+
+        self.togglePlayback = function (milliseconds) {
+            // private access. Can improve when https://github.com/paulrosen/abcjs/pull/917 merges
+            milliseconds = milliseconds || 0;
+            var isPlaying = midiBuffer.isRunning;
+            if (isPlaying) {
+                synthControl.pause();
+                console.log("Pused. Seeking ", milliseconds / 1000.0, "s");
+                synthControl.seek(milliseconds / 1000.0, "seconds");
+            } else {
+                synthControl.seek(milliseconds / 1000.0, "seconds");
+                console.log("Seek ", milliseconds / 1000.0, "s, playing...");
+                synthControl.play();
+            }
+        };
+    }
+
+    function Score(audio, abcString, elem, audioElem) {
+
+        var self = this;
+        self.activated = false;
+        var cursorControl = new CursorControl(elem);
+
+        function clickListener(abcelem, tuneNumber, classes, analysis, drag, mouseEvent) {
+            audio.activate(score, cursorControl, () => {
+                // console.log("abcelem: ", abcelem);
+                // console.log("tuneNumber: ", tuneNumber);
+                // console.log("analysis:", analysis);
+                // https://github.com/paulrosen/abcjs/issues/572
+                var millis = (typeof abcelem.currentTrackMilliseconds === 'object') ? abcelem.currentTrackMilliseconds.slice(-1)[0] : abcelem.currentTrackMilliseconds;
+                console.log("Toggling playback to ", millis / 1000.0, " s...");
+                audio.togglePlayback(millis);
+            });
+        }
+
+        var visualOptions = { clickListener: clickListener, add_classes: true };
+        var score = ABCJS.renderAbc(elem, abcString, visualOptions)[0];
+        console.log("Created Score:\n  audio: ", audio, "\n  abc: ", abcString, "\n  elem: ", elem, "\n  audioElemn: ", audioElem);
+
+    }
+
+
+
+    const { renderAll } = require('musicapp');
+    // const {abcjs} = require('abcjs-basic-min');
+    renderAll('code.language-music', 0.8);
+
+    const audioControls = document.createElement('aside');
+    audioControls.setAttribute('style', 'display:none');
+    document.querySelector('body').appendChild(audioControls);
+    const audio = new Audio(audioControls);
+
+    const music = Array
+        .from(document.querySelectorAll('code.language-music-abc'))
+        .map(element => {
+            const score = element.textContent || '';
+            const div = document.createElement('div');
+            div.setAttribute("class", "music");
+            element.parentElement?.replaceChild(div, element);
+            const scoreDiv = document.createElement('div');
+            scoreDiv.setAttribute("class", "score");
+            div.appendChild(scoreDiv);
+            const controlDiv = document.createElement('div');
+            div.setAttribute("class", "control");
+            div.appendChild(controlDiv);
+            new Score(audio, score, scoreDiv, controlDiv);
+        });
 </script>

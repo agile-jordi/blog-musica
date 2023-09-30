@@ -35,25 +35,27 @@ Pentagrama amb nota entre la quarta i cinquena línies
 {:.figcaption}
 
 Doncs depèn. De moment n'hi ha prou a dir que si afegim el símbol de la clau de Sol a la partitura podem afirmar sense dubtes que la nota representada entre la quarta i cinquena línies és un Mi5[^1].  Aleshores el Fa5 estarà sobre la cinquena línia (la de dalt de tot) i el Sol5 estarà per damunt.
-
-```music
-CTr E5 F G
+```music-abc
+L:1/4
+e f g
 ```
 Pentagrama amb clau de sol: Mi5, Fa5 i Sol5
 {:.figcaption}
 
 Però aleshores com representem la següent nota en altura, el La5? La solució de la notació musical és posar-lo al lloc on aniria la següent línia més alta i, per a que no hi hagi confusió, afegir un fragment de la mateixa línia. Així podem pujar tantes notes com ens calgui:
 
-```music
-CTr E5 F G A B C6
+```music-abc
+L: 1/4
+e f g a b c'
 ```
 Mi5, Fa5, Sol5, La5, Si5, Do6 en clau de Sol.
 {:.figcaption}
 
 Per sota podem fer el mateix. La primera línia (la de baix de tot), en clau de sol, correspon al Mi4. Podem anar baixant l'altura i afegint segments addicionals quan ens allunyem de les línies del pentagrama:
 
-```music
-CTr E4 D C B3 A G
+```music-abc
+L:1/4
+E D C B, A, G,
 ```
 Mi4, Re4, Do4, Si3, La3 i Sol3 en clau de Sol.
 {:.figcaption}
@@ -64,25 +66,26 @@ I per què cal aquest símbol? Perquè 5 línies són molt poques... M'explico.
 
 Cada instrument té un [àmbit](https://ca.wikipedia.org/wiki/%C3%80mbit), que és l'interval entre el so més greu i el més agut que es pot tocar amb l'instrument; també les veus humanes. I per què menciono ara això? Poc a poc. 
 Si el teu instrument és un violí el seu àmbit serà l'interval entre el Sol3 i el La7 i, per tant, les partitures que llegiràs tindran notes en aquest interval:
-
-```music
-CTr G3 C4 C5 C6 C7 A7
+```music-abc
+L:1/4
+G, C c c' c'' a''
 ```
 Àmbit del violí (Sol3 a La7) i tots els Do intermitjos, en clau de sol.
 {:.figcaption}
 
 Malgrat que a les parts més agudes hauràs de comptar ratlletes, per a la majoria de partitures estaràs fent servir tot l'espai del pentagrama. És més, en el cas del violí els principiants no movem encara la mà esquerra de llloc; diem que estem en primera posició. I en aquesta, només podem tocar notes entre el Sol3 i el Si5 (Do6 excepcionalment allargant molt el dit petit):
 
-```music
-CTr G3 C4 C5 C6
+```music-abc
+L:1/4
+G, C c c'
 ```
 Àmbit de la primera posició de violí (Sol3 a Do6) en clau de sol (i tots els Do intermitjos).
 {:.figcaption}
 
 Però què passa si toques, per exemple, la tuba? El seu àmbit és de Re1 a Fa4, que representat en clau de sol seria:
-
-```music
-CTr D1 C2 C3 C4 F4
+```music-abc
+L:1/4
+D,,, C,, C, C F
 ```
 Àmbit de la tuba (Re1 a Fa4) i tots els Do intermitjos, en clau de Sol 
 {:.figcaption}
@@ -90,9 +93,10 @@ CTr D1 C2 C3 C4 F4
 En aquest cas, no només hauries d'estar comptant ratlletes tota l'estona si no que, a més, 4 de les 5 línies del pentagrama no les faries servir per res, ja que el teu instrument no pot tocar les notes que hi van.
 
 La solució és posar les notes a un altre lloc del pentagrama. Si, per exemple, posem el Fa4 a la quarta línia del pentagrama, tindrem el pentagrama més al mig de l'àmbit de la tuba i, per tant, serà molt més fàcil de llegir per als intèrprets de tuba. Per a indicar que hem decidit posar el Fa a la quarta línia dibuixem la clau de Fa en quarta o, el que és el mateix, el símbol de clau de Fa centrat en la quarta línia:
-
-```music 
-CBa D1 C2 C3 C4 F4
+```music-abc
+K:bass
+L:1/4
+D,,, C,, C, C F
 ```
 Àmbit de la tuba (Re1 a Fa4) i tots els Do intermitjos, en clau de Fa 
 {:.figcaption}
@@ -100,33 +104,36 @@ CBa D1 C2 C3 C4 F4
 Quina és la llista completa de claus? N'hi ha força, però només quatre estan en ús. Vegem-les i, per a cada una, representem la nota central i un Do4.
 
 La clau de Sol (en segona) és la més comú i es fa servir per als instruments més aguts: l'oboè, la flauta, el violí, les veus de soprano i contralt, alguns instruments de percussió i la mà dreta del piano i altres instruments de teclat:
-
-```music
-CTr G4 C4 
+```music-abc
+L:1/4
+G C
 ```
 Clau de Sol, Sol4 i Do4
 {:.figcaption}
 
 La clau de Fa (en quarta) es fa servir pels instruments més greus: el violoncel, el contrabaix, la tuba, el trombó, el fagot, el contrafagot i la mà esquerra del piano i altres instruments de teclat:
-
-```music
-CBa F3 C4 
+```music-abc
+K:bass
+L:1/4
+F, C
 ```
 Clau de Fa, Fa4 i Do4
 {:.figcaption}
 
 La clau de Do en tercera (sobre la tercera línia) es fa servir per a viola, viola de gamba, mandola i pot aparèixer en determinades partitures per trombó alt, oboè o flauta dolça:
-
-```music
-CAl C4 
+```music-abc
+L:1/4
+K: alto
+C
 ```
 Clau de Do en 3a i Do4
 {:.figcaption}
 
 La clau de Do en quarta (sobre la quarta línia) es fa servir per a fagot i per a representar notes agudes d'instruments com el violoncel, el trombó tenor o el bombardí.
-
-```music
-CTe C4
+```music-abc
+L:1/4
+K: `tenor`
+C
 ```
 Clau de Do en 4a i Do4
 {:.figcaption}
